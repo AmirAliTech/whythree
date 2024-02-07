@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        @media screen and (max-width: 850px) {
+            .none3 {
+                display: none;
+            }
+
+            .none4 {
+                display: block;
+            }
+
+            .differ {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0px;
+            }
+
+            .half {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger-subtle">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="py-3 px-4 hoborder" onclick="shop1()">
+                        <a href="#" class="text-decoration-none text-dark fw-bold none12"
+                            style="font-size: 20px">Shop</a>
+                    </li>
+                    <li class="py-3 px-4 hoborder" onclick="whythree1()">
+                        <a href="#" class="text-decoration-none text-dark fw-bold" style="font-size: 20px">Why
+                            Three?</a>
+                    </li>
+                    <li class="py-3 px-4 hoborder" onclick="help1()">
+                        <a href="#" class="text-decoration-none text-dark fw-bold" style="font-size: 20px">Help</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search three.co.uk" class="py-5 px-2"
+                        style="width: 300px" aria-label="Search" />
+                    <button class="btn bg-dark rounded-circle" type="submit">
+                        <i class="fa fa-search text-light"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center " style="width: 98%;">
+        <div id="shoplink" class="mt-2 none1  ">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between flex-row my-4 " style="
+                padding: 20px 0px;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+              ">
+                    <a href="" class="d-flex justify-content-between w-100 text-decoration-none text-dark "> <span
+                            class="fw-bold " style="font-size: 22px;">View Shop</span>
+                        <span><i class="fa fa-arrow-circle-right" style="font-size: 22px;"></i></span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Offers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Christmas offers</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Student deals</p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Mobile phones</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay Monthly phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>5G phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All phone brands</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>iPhone 15</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Galaxy S23</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Z Flip and Fold Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">SIM Only</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All SIM deals</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay monthly phone SIMs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go Data Packs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Free Pay As You Go SIM
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data SIMs
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Broadband</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Three Broadband</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Mobile Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Home Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>eero
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Smartwatches</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Apple Watch</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Watch
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Existing customers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Upgrade</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Top-up
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data & Add-ons
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">More devices</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Tablets and laptops</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Accessories
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black ">
+                <a href="#" class="text-decoration-none " onclick="none2()"><span class="text-light fw-bold "
+                        style="font-size: 20px;">Close</span></a>
+            </div>
+        </div>
+
+        <div id="whythree" class="mt-2 none1 ">
+            <div class="row">
+                <div class="col d-flex justify-content-between flex-row my-4 " style="
+                padding: 20px 0px;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+              ">
+                    <a href="" class="d-flex justify-content-between w-100 text-decoration-none text-dark "> <span
+                            class="fw-bold " style="font-size: 22px;">View Shop</span>
+                        <span><i class="fa fa-arrow-circle-right" style="font-size: 22px;"></i></span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Offers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Christmas offers</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Student deals</p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Mobile phones</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay Monthly phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>5G phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All phone brands</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>iPhone 15</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Galaxy S23</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Z Flip and Fold Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">SIM Only</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All SIM deals</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay monthly phone SIMs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go Data Packs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Free Pay As You Go SIM
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data SIMs
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Broadband</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Three Broadband</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Mobile Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Home Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>eero
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Smartwatches</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Apple Watch</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Watch
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Existing customers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Upgrade</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Top-up
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data & Add-ons
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">More devices</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Tablets and laptops</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Accessories
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black ">
+                <a href="#" class="text-decoration-none " onclick="none2()"><span class="text-light fw-bold "
+                        style="font-size: 20px;">Close</span></a>
+            </div>
+        </div>
+
+        <div id="help" class="mt-2 none1 ">
+            <div class="row">
+                <div class="col d-flex justify-content-between flex-row my-4 " style="
+                padding: 20px 0px;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+              ">
+                    <a href="" class="d-flex justify-content-between w-100 text-decoration-none text-dark "> <span
+                            class="fw-bold " style="font-size: 22px;">View Shop</span>
+                        <span><i class="fa fa-arrow-circle-right" style="font-size: 22px;"></i></span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Offers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Christmas offers</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Student deals</p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Mobile phones</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay Monthly phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>5G phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All phone brands</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>iPhone 15</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Galaxy S23</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Z Flip and Fold Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">SIM Only</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All SIM deals</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay monthly phone SIMs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go Data Packs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Free Pay As You Go SIM
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data SIMs
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Broadband</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Three Broadband</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Mobile Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Home Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>eero
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Smartwatches</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Apple Watch</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Watch
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Existing customers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Upgrade</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Top-up
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data & Add-ons
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">More devices</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Tablets and laptops</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Accessories
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black ">
+                <a href="#" class="text-decoration-none " onclick="none2()"><span class="text-light fw-bold "
+                        style="font-size: 20px;">Close</span></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="half">
+            <h1 class="h1 fw-bold " style="font-size: 61px; line-height: 65px;">Bring your number to Three</h1>
+            <p>Three Business customer? Go to the <a href="">business switching form.</a></p>
+            <h1 class="fw-bold ">Please enter your details below:</h1>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com"
+                    style="outline: none; border:none; border-bottom: 2px solid black ; border-radius: 0px; width: 100%;"
+                    required>
+                <label for="floatingInput">Your Three number</label>
+            </div>
+            <p>The number that comes with your new Three SIM.</p>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    style="outline: none; border:none; border-bottom: 2px solid black ; border-radius: 0px; width: 100%;"
+                    required>
+                <label for="floatingPassword">Confirm your Three number</label>
+            </div>
+            <p>Please re-type your Three number.</p>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    style="outline: none; border:none; border-bottom: 2px solid black ; border-radius: 0px; width: 100%;"
+                    required>
+                <label for="floatingPassword">Your non-Three number</label>
+            </div>
+            <p>The phone number you want to bring to Three.</p>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    style="outline: none; border:none; border-bottom: 2px solid black ; border-radius: 0px; width: 100%;"
+                    required>
+                <label for="floatingPassword">PAC</label>
+            </div>
+            <p>Get this code from your current provider. It should look a bit like this: ABC123456.</p>
+            <div class="form-floating">
+                <input type="date" class="form-control" id="floatingPassword" placeholder="Password"
+                    style="outline: none; border:none; border-bottom: 2px solid black ; border-radius: 0px; width: 100%;"
+                    required>
+                <label for="floatingPassword"></label>
+            </div>
+            <p class="w-100  ">The earliest available date is automatically selected above, but you can also pick any
+                working
+                day within the next 30 days if you prefer. Bear in mind that Bank Holidays can’t be chosen, and some
+                other
+                dates may be unavailable.</p>
+            <h6 class="fw-bold ">Switching your services</h6>
+            <p class="w-100 ">Before we can switch your services to Three, we need to confirm you understand what this
+                means.
+            </p>
+            <p class="w-100 ">Your existing provider will have sent you important information about the impact the
+                switch
+                will have on your services with them. This will cover any charges you’ll need to pay or refunds you’re
+                due.
+            </p>
+            <p class="w-100 ">Our support pages have <a href="">more information about our switching process</a>. This
+                includes information about your right to compensation if there’s a delay. These details are also in the
+                pre-sales contract information. </p>
+            <h6 class="fw-bold ">We’ll keep a record of this consent, in line with regulations.</h6>
+            <div class="d-flex "><input type="checkbox" style="width: 30px; height: 30px; color:black;">
+                <p class="d-flex align-items-center ">I agree to switch my services to Three</p>
+            </div>
+            <button class="fw-bold text-light border bg-black rounded-4 py-2 " style="width: 35%;">Port my
+                number</button>
+        </div>
+    </div>
+    <footer class=" mt-5 " style="background-color: rgb(253, 229, 233); border-bottom: 1px solid black">
+        <div class="d-flex my-5 align-items-center flex-lg-row flex-column  "
+            style="border-top: 1px solid black; border-bottom: 1px solid black; width: 100%;">
+            <form action="" class="d-flex align-items-center my-5 " style="margin: 0px 200px;">
+                <input type="search" class="rounded-2 py-2 px-4 mx-2  " placeholder="find your nearest store"
+                    style="width: 300px;">
+                <button class="btn bg-dark rounded-circle" type="submit">
+                    <i class="fa fa-search text-light"></i>
+                </button>
+            </form>
+            <a href="#" class="text-decoration-none text-black fw-bold  " style="font-size: 25px;">Check coverage and
+                network status</a>
+        </div>
+        <div class="container">
+
+
+
+            <div class="row">
+                <div class="col none3">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Offers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Christmas offers</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Student deals</p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Mobile phones</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay Monthly phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>5G phones</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All phone brands</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>iPhone 15</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Galaxy S23</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Z Flip and Fold Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="none4 differ " style="border: 1px solid black;"><button onclick="none4()">explore
+                        three</button><i class="fa fa-arrow-circle-right" style="font-size: 22px;"></i></div>
+                <div class="col none3" id="none31">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">SIM Only</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>All SIM deals</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay monthly phone SIMs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Pay As You Go Data Packs
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Free Pay As You Go SIM
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data SIMs
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="none4 differ " style="border: 1px solid black;"><button onclick="none5()">Popular products
+                    </button><i class="fa fa-arrow-circle-right" style="font-size: 22px;"></i></div>
+                <div class="col none3" id="none32">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Broadband</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Three Broadband</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Mobile Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Home Broadband
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>eero
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Smartwatches</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Apple Watch</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Samsung Watch
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="none4 differ" style="border: 1px solid black;"><button onclick="none6()">Popular
+                        phones</button><i class="fa fa-arrow-circle-right" style="font-size: 22px;"></i></div>
+                <div class="col none3" id="none33">
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">Existing customers</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Upgrade</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Top-up
+                            </p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Data & Add-ons
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="h5 fw-bold text-dark ">More devices</h5>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Tablets and laptops</p>
+                        </a>
+                        <a href="" class="text-decoration-none text-black " style="font-size: 20px;">
+                            <p>Accessories
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div style="background-color: rgb(253, 229, 233);">
+        <div class="container  " style="border-bottom: 1px solid black;">
+            <div class="row">
+                <div class="col-12 col-sm-6  d-flex justify-content-between flex-md-row flex-column ">
+                    <a href="#" class="text-decoration-none text-black ">About us</a>
+                    <a href="#" class="text-decoration-none text-black ">Social commitment</a>
+                    <a href="#" class="text-decoration-none text-black ">Codes of practice</a>
+                    <a href="#" class="text-decoration-none text-black ">Wholesale</a>
+                    <a href="#" class="text-decoration-none text-black "> Careers</a>
+                </div>
+                <div class="col-12 col-sm-6  d-flex justify-content-between flex-md-row flex-column ">
+                    <a href="#" class="text-decoration-none text-black ">Contact us</a>
+                    <a href="#" class="text-decoration-none text-black ">Media centre</a>
+                    <a href="#" class="text-decoration-none text-black "> Price guide</a>
+                    <a href="#" class="text-decoration-none text-black ">SMARTY</a>
+                    <a href="#" class="text-decoration-none text-black "> Terms and conditions</a>
+                    <a href="#" class="text-decoration-none text-black ">Business</a>
+                </div>
+
+            </div>
+            <div class="row py-3 ">
+                <div class="col-12 col-sm-6  d-flex justify-content-between flex-md-row flex-column ">
+                    <a href="#" class="text-decoration-none text-black ">About us</a>
+                    <a href="#" class="text-decoration-none text-black ">Social commitment</a>
+                    <a href="#" class="text-decoration-none text-black ">Codes of practice</a>
+                    <a href="#" class="text-decoration-none text-black ">Wholesale</a>
+                    <a href="#" class="text-decoration-none text-black "> Careers</a>
+                </div>
+                <div class="col-12 col-sm-6  d-flex justify-content-between flex-md-row flex-column ">
+                    <a href="#" class="text-decoration-none text-black ">Contact us</a>
+                    <a href="#" class="text-decoration-none text-black ">Media centre</a>
+                    <a href="#" class="text-decoration-none text-black "> Price guide</a>
+                    <a href="#" class="text-decoration-none text-black ">SMARTY</a>
+                    <a href="#" class="text-decoration-none text-black "> Terms and conditions</a>
+                    <a href="#" class="text-decoration-none text-black ">Business</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(253, 229, 233);">
+        <div class="container">
+            <p class="w-50 ">Hutchison 3G UK Ltd</p>
+        <p class="w-50 ">Registered address: 450 Longwater Avenue, Green Park, Reading, Berkshire, RG2 6GF
+            Registered in England & Wales | Registered company number: 03885486
+            Authorised & Regulated by the Financial Conduct Authority for consumer credit (registration number: 738979)</p>
+            <p class="w-50 ">© Hutchison 3G UK Limited 2002 - Present.</p>
+        </div>
+      <div class="d-flex align-items-center justify-content-center flex-wrap w-100 ">  <img src="three.svg" alt="" width="99%
+        "></div>
+    </div>
+    <script>
+        const shoplink = document.getElementById('shoplink');
+        const whythree = document.getElementById('whythree');
+        const help = document.getElementById('help');
+        function shop1() {
+            shoplink.style.display = 'block';
+            whythree.style.display = 'none';
+            help.style.display = 'none';
+        }
+        function whythree1() {
+            shoplink.style.display = 'none';
+            whythree.style.display = 'block';
+            help.style.display = 'none';
+        }
+        function help1() {
+            shoplink.style.display = 'none';
+            whythree.style.display = 'none';
+            help.style.display = 'block';
+        }
+        function none2() {
+            shoplink.style.display = 'none';
+            whythree.style.display = 'none';
+            help.style.display = 'none'
+        }
+        function none4() {
+            var none31 = document.getElementById('none31');
+            if (none31.style.display === '' || none31.style.display === 'none') {
+                none31.style.display = 'block';
+            } else {
+                none31.style.display = 'none';
+            }
+        }
+
+        function none5() {
+            var none32 = document.getElementById('none32');
+            if (none32) {
+                none32.style.display = (none32.style.display === 'none') ? 'block' : 'none';
+            }
+        }
+
+        function none6() {
+            var none33 = document.getElementById('none33');
+            if (none33) {
+                none33.style.display = (none33.style.display === 'none') ? 'block' : 'none';
+            }
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5844408008.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

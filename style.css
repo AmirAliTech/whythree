@@ -1,0 +1,19 @@
+.none1{
+    display: none;
+    transition: 1s;
+}
+.hoborder:hover{
+    border-bottom: 7px solid rgb(8, 8, 168);
+}
+.none4{
+    display: none;
+}
+.none4 button{
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+.half{
+    width: 50%;
+}
